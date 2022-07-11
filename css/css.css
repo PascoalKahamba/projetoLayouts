@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: "font_mae";
+  background-color: rgba(0, 0, 0, 0.562);
+}
+@font-face {
+  font-family: "font_mae";
+  src: url(../font/fonts/fontawesome-webfont.woff2);
+}
+img {
+  width: 100%;
+}
+.header {
+  background-color: rgba(11, 148, 240, 0.301);
+  padding: 15px;
+  width: 89%;
+  position: fixed;
+  top: 0;
+  left: 35px;
+  margin: 0 auto;
+  z-index: 2;
+}
+.header h1 {
+  color: rgb(44, 199, 147);
+  margin-bottom: -16px;
+}
+.header h1:first-letter {
+  background: rgb(49, 47, 47);
+  font-size: 52px;
+}
+.redes-socias {
+  margin-left: 170px;
+  position: fixed;
+  width: 75%;
+  top: 72px;
+  z-index: 2;
+}
+.redes-socias ul {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.redes-socias ul li {
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+  margin-left: 1px;
+  height: 40px;
+}
+.redes-socias ul li a {
+  padding: 10px 0;
+}
+.fundo-fixo {
+  background: #000;
+  border-bottom: 3px #fff solid;
+  opacity: 0.7;
+}
+.fundo-normal {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.fundo-normal:hover {
+  background: none !important;
+  border-bottom: none !important;
+  opacity: 1 !important;
+}
+
+input::placeholder {
+  color: rgba(22, 20, 20, 0.562);
+  text-align: center;
+  font-size: 16px;
+}
+#busca {
+  background: transparent;
+  border: none;
+  width: 190px;
+  height: 30px;
+  margin-top: 15px;
+  border-bottom: 1px #fff solid;
+}
+.redes-socias ul li:hover {
+  background: #000;
+  border-bottom: 3px #fff solid;
+  opacity: 0.7;
+}
+.search {
+  /* font-size: 100px; */
+  padding: 8px;
+  position: relative;
+  top: -28px;
+  left: 10px;
+}
+.search:hover {
+  background: rgb(202, 200, 200);
+  opacity: 0.7;
+}
+.redes-socias li a {
+  margin-top: 70px;
+  color: #fff;
+  font-size: 17px;
+}
+
+.estrutura {
+  width: 90%;
+  margin: 70px auto auto;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+}
+.primeira {
+  grid-column: 1/-1;
+  background-image: url(../img/2.jpg);
+  border: 20px solid rgba(11, 148, 240, 0.24);
+  background-size: 100% 100%;
+  height: 72vh;
+
+  /* padding: 30px; */
+}
+.primeira > div {
+  width: 46%;
+  height: 42%;
+  margin: 130px auto;
+  padding: 30px;
+  color: #fff;
+  background: rgba(22, 20, 20, 0.562);
+  border-top: 8px solid rgb(24, 129, 94);
+}
+.primeira div *:first-child {
+  font-size: 1.8em;
+  text-align: center;
+  padding: 10px;
+}
+.primeira div *:nth-child(2) {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.1em;
+}
+.segunda {
+  background: rgba(22, 20, 20, 0.562);
+  padding: 15px;
+}
+.segunda,
+.terceira {
+  margin-top: -10px;
+  height: 86%;
+}
+
+.segunda figure img {
+  width: 100%;
+}
+.segunda figure figcaption {
+  background: rgba(22, 20, 20, 0.562);
+  color: #fff;
+  font-size: 2em;
+  padding: 16px;
+  text-align: center;
+  line-height: 10px;
+  position: relative;
+  top: -40px;
+  z-index: 1;
+}
+.segunda p:nth-child(2) {
+  color: rgba(138, 133, 133, 0.562);
+  text-align: center;
+  font-size: 1.8em;
+  padding: 10px;
+  margin-top: -43px;
+  font-weight: bold;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.562);
+}
+.segunda *:nth-child(3) {
+  color: #fff;
+  padding: 15px;
+  text-align: justify;
+  line-height: 19px;
+}
+.flex01 {
+  display: flex;
+  padding: 16px 2px;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex01 p {
+  font-size: 1.8em;
+  color: #fff;
+  font-weight: bold;
+}
+.flex01 figure {
+  max-width: 13%;
+}
+.flex01 figure img {
+  width: 100%;
+}
+.terceira figure {
+  width: 100%;
+  height: 43%;
+}
+.terceira figure img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.terceira figure figcaption {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  padding: 20px;
+  background: rgba(22, 20, 20, 0.6);
+  top: -76px;
+}
+.terceira > div {
+  display: flex;
+  padding: 30px 0px;
+  margin-top: -9px;
+  /* align-content: flex-start; */
+}
+.terceira > div img {
+  width: 20%;
+  margin-right: 20px;
+}
+.terceira h3 {
+  font-size: 1.5em;
+  padding: 10px 0;
+  color: #fff;
+}
+.terceira div > div {
+  margin-top: -13px;
+}
+.terceira div > div p {
+  color: rgb(240, 239, 239);
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.562);
+}
+/* .terceira hr {
+  font-size: 5em;
+  color: #fff;
+} */

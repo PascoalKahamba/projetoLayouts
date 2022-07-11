@@ -1,0 +1,61 @@
+@media (max-width: 984px) {
+  .estrutura {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .redes-socias {
+    max-width: 60%;
+    position: relative;
+    left: auto;
+    top: 80px;
+    bottom: 10px;
+  }
+  .segunda {
+    height: auto;
+  }
+  /* .menu-ocurto {
+    width: 60%;
+    background: red;
+    position: absolute;
+    z-index: 5;
+  }
+  .barra {
+    width: 80px;
+    height: 5px;
+    margin-bottom: 3px;
+    background: #000;
+  } */
+  .redes-socias ul {
+    display: block;
+    text-align: center;
+    max-width: 31%;
+  }
+  .primeira > div {
+    margin: 70px auto;
+    padding: 25px;
+    height: auto;
+  }
+}
+@media (max-width: 770px) {
+  .primeira div *:first-child {
+    font-size: 1.5em;
+  }
+  .primeira > div {
+    margin-top: 12px;
+    margin-left: 5px;
+    padding: 5px;
+  }
+  .terceira figure figcaption {
+    top: -110px;
+  }
+}
+
+@media (max-width: 972px) {
+  .terceira figure figcaption {
+    top: -110px;
+  }
+}
+@media (max-width: 670px) {
+  .terceira figure figcaption {
+    top: -75px;
+  }
+}
